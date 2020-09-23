@@ -1,0 +1,7 @@
+apiVersion: monitoring.deloitte.com/v1beta2
+kind: prometheus
+metadata:
+  name: example-prometheus-k8s
+spec:
+  size: 1
+  version: 0.0.1

@@ -1,0 +1,21 @@
+apiVersion: apiextensions.k8s.io/v1beta1
+kind: CustomResourceDefinition
+metadata:
+  name: prometheus.monitoring.deloitte.com
+  labels:
+    prometheus: k8s
+spec:
+  version: v1beta2
+  group: monitoring.deloitte.com
+  names:
+    kind: prometheus
+    listKind: prometheusList
+    plural: prometheus
+    shortNames:
+    - p
+    - prom
+  scope: Namespaced
+  versions:
+  - name: v1beta2
+    served: true
+    storage: true
